@@ -1,0 +1,26 @@
+@a = http://localhost:5294
+
+GET {{a}}/all
+Accept: application/json
+
+###
+
+POST {{a}}/new
+Content-Type: application/json
+
+{
+  "name": "intel core i9-14900KF",
+  "manufacturer": "intel",
+  "function": "gaming"
+}
+
+###
+
+POST {{a}}/new
+Content-Type: application/json
+
+{
+  "name": "amd ryzen 9800x3d",
+  "manufacturer": "amd",
+  "function": "gaming"
+}
